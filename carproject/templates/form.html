@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <link rel="stylesheet" href="{{url_for('static',filename='newstyle.css')}}">
+  <!-- to add file path in href we need to use url_for() function and at the first we need to add the folder name and next we need to add filename as above -->
+
+<h2>The method Attribute</h2>
+
+<p>This form will be submitted using the GET method:</p>
+
+<form action="/predict" target="_blank" method="post">
+  <label>carname:</label><br>
+  <input type="text" id="physics" name="carname" placeholder="carname"><br>
+  <label>year:</label><br>
+  <input type="text" id="chemistry" name='year' placeholder="year"><br>
+  <label >kms driven:</label><br>
+  <input type="text" id="mathematics" name="kmsdriven" placeholder="kmsdriven"><br>
+  <label>fuel type:</label><br>
+  <input type="text" id="physics" name="fueltype" placeholder="fueltype"><br>
+  <label>seller type:</label><br>
+  <input type="text" id="physics" name="sellertype" placeholder="sellertype"><br>
+  <label>transmission:</label><br>
+  <input type="text" id="physics" name="transmission" placeholder="transmission"><br>
+  <label>owner:</label><br>
+  <input type="text" id="physics" name="owner" placeholder="owner"><br>
+  <label>current year:</label><br>
+  <input type="text" id="physics" name="currentyear" placeholder="currentyear"><br>
+  <label>car age:</label><br>
+  <input type="text" id="physics" name="carage" placeholder="carage"><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<h1>{{prediction}}</h1>
+</body>
+</html>
